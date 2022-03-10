@@ -4,7 +4,7 @@ plugins {
     id 'maven-publish'
 }
 
-group 'org.companyB'
+group 'io.github.charles-burrell-3'
 version '1.0-SNAPSHOT'
 
 repositories {

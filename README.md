@@ -21,9 +21,9 @@ public class AnnotatedTestClass{
 ```
 ### Standalone
 If you are not using Spring, then all classes that have fields decorated with the `@Logger` annotation will need to be 
-using `org.companyB.spring_logger.processor.FieldProcessor.get().process(instance).`
+using `io.github.charles_burrell_3.spring_logger.FieldProcessor.get().process(instance).`
 ### Spring
-This should work out of the box with Spring. The `org.companyB.spring_logger.processor.LoggerAnnotationProcessor` should
+This should work out of the box with Spring. The `io.github.charles_burrell_3.spring_logger.LoggerAnnotationProcessor` should
 handle all the automatic Bean field processing, provided that something like the following is done in a `@Configuration` 
 class:
 ```java
