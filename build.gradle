@@ -2,6 +2,7 @@ plugins {
     id 'java'
     id 'jacoco'
     id 'maven-publish'
+    id 'net.researchgate.release' version '2.8.1'
 }
 
 group 'io.github.charles-burrell-3'
@@ -49,5 +50,10 @@ jacocoTestReport {
         xml.required = false
         csv.required = false
         html.outputLocation = layout.buildDirectory.dir('jacocoHtml')
+    }
+}
+release{
+    git{
+        requireBranch ='main'
     }
 }
