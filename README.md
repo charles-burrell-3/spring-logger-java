@@ -1,11 +1,18 @@
 # Spring Logger (Java)
+[![Java CI](https://github.com/charles-burrell-3/spring-logger-java/actions/workflows/build.yaml/badge.svg)](https://github.com/charles-burrell-3/spring-logger-java/actions/workflows/build.yaml)
 ## Description
 This is a very simple Logging annotation for Java and Java based Spring projects.
 ## Motivation
 I use logging in just about every non-POJO class when I'm developing an application. Setting up a Logger for use
 is boilerplate code, and should be made to be as trivial as possible.
 ## Installation
-(TBD)
+```xml
+<dependency>
+    <groupId>io.github.charles_burrell_3</groupId>
+    <artifactId>spring-logger-java</artifactId>
+    <version>1.0</version>
+</dependency>
+```
 ## Usage
 The below shows how to use the `@Logger` annotation on a field. Note the following:
 1. Only Log4J and SLF4J are currently supported.
